@@ -1,0 +1,181 @@
+
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="index.html">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Signup</div>
+        <div class="right">
+            <!-- <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a> -->
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="signup" class="page">
+        <div class="page-content">
+            <div class="content-block">
+    
+                
+  <div class="back-image bg bg1">
+      <h1 class="header-w3ls ">
+        Nipocket
+      </h1>
+      <div class="main ">
+        <div class="headder-icon">
+          <div class="top-icon ">
+          <img src="img/logo.png" style="vertical-align: baseline;border-style: none;">
+          </div>
+        </div>
+        <div class="its-sign-in">
+          <h2 class="">Sign Up Here</h2>
+        </div>
+        <div class="tab">
+  <button class="tablinks active" style="width: 50%" onclick="openCity(event, 'personal')">Personal</button>
+  <button style="width: 50%" class="tablinks" onclick="openCity(event, 'business')">Business</button>
+
+</div>
+<div id="personal" class="tabcontent">
+    <form  id="signup_personal" method="post">
+          <input type="hidden" name="secrete" value="Penisking">
+          <input type="hidden" name="register_type" value="personal">
+          <input type="hidden" name="device_type" value="web">
+          <div class="form-left-w3l ">
+          
+            
+            <input type="text" placeholder="Refral Code" id="refral_code" name="refral_code" >
+          </div>
+          <div class="form-left-w3l ">
+            <input type="text" placeholder="Full Name" id="full_name" name="full_name" >
+          </div>
+          <div class="form-left-w3l ">
+            <input type="text" placeholder="Mobile" id="personalmobile" name="mobile" >
+          </div>
+          <div class="form-left-w3l ">
+            <input type="email" placeholder="Email" id="personalemail" name="email" >
+          </div>
+        
+          <div class="form-left-w3l ">
+            <input type="password" placeholder="password" id="personalpassword" name="password" >
+            
+          </div>
+          <div class="rem-pass-agile">
+            <div class="right-side">
+             
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="btnn">
+            <button type="submit" class="btn">Sign in</button><br>
+            <div class="clear"></div>
+          </div>
+        </form>
+</div>
+
+<div id="business" class="tabcontent" style="display: none;">
+    <form  id="signup_business" method="post">
+    
+          <input type="hidden" name="secrete" value="Penisking">
+          <input type="hidden" name="register_type" value="business">
+          <input type="hidden" name="device_type" value="web">
+
+          <div class="form-left-w3l ">
+            
+            <input type="text" placeholder="Referral Code" id="sponsor_id" name="sponsor_id" >
+          </div>
+           <div class="form-left-w3l ">
+            <input type="text" placeholder="Business Name" id="buisness_name" name="buisness_name" >
+          </div>
+          <div class="form-left-w3l ">
+            <input type="text" placeholder="Owner Name" id="owner_name" name="owner_name" >
+          </div>
+
+          <div class="form-left-w3l ">
+            <input type="text" placeholder="Mobile" id="businessmobile" name="mobile" >
+          </div>
+          <div class="form-left-w3l ">
+            <input type="email" placeholder="Email" id="businessemail" name="email" >
+          </div>
+        
+          <div class="form-left-w3l ">
+            <input type="password" placeholder="password" id="businesspassword" name="password" >
+            
+          </div>
+           
+          <div class="rem-pass-agile">
+            <div class="right-side">
+             
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="btnn">
+            
+            <button type="submit"  class="btn" >Sign in</button><br>
+            
+            <div class="clear"></div>
+          </div>
+        </form>
+</div>
+
+
+      
+       
+         <input type="hidden" id="register_type" name="register_type" value="personal" >
+        <div class="left-side">
+            <br>
+          <a href="index.html" class="for ">Already have an account..? </a>
+        </div>
+      </div>
+
+      <div class="copy">
+      
+      </div>
+    </div>
+
+  <div class="modal fade" id="createOrder" data-backdrop="static"  tabindex="-1" role="dialog" aria-labelledby="createOrderTitle" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header pink-gradient" id="createOrderTitle">
+                    <div class="col text-center">
+                        <h5 class="mt-3">Email Varification </h5>
+                        <p>Almost Done  Just verify Your Email..!</p>
+                    </div>
+                  
+                </div>
+                <form id="verify_otp" method="post">
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 mx-auto">
+                            <div class="form-group row">
+                                <div class="col-sm-12 col-sm-12">
+                                     <p>OTP Sent On Your Register Email</p>
+                                       <div class="form-left-w3l " id="type" >
+                                    <input style="width: 80%;" name="otp" id="otp" type="text" placeholder="Enter OTP here">
+                                  <input type="hidden" name="secrete" value="Penisking">
+                                  <br>
+                                  <lable class="errors" id="er"></lable>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                   
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
